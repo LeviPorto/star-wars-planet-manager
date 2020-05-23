@@ -37,7 +37,7 @@ Principal resource and unique is a SOL
 4. StarWarsClient is responsible for send requests to Swapi API
 
 I don´t put this on Eureka Server in due of have horizontal scalability, but is very simple, just run Eureka Server and put
-this MS to register on it using application.yml
+this MS to register on it using application.yml. Another point is , if we want updated data about films that our planets are present, entity Planet can´t have quantity of films that this planet already appearred before to save as atribbute, have to be, on retrieves request, this value is incorporated to request, incorporating to this entity.
 
 
 
