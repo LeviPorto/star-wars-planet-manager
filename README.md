@@ -3,14 +3,14 @@
 ## Description
 
 This Micro Service can make CRUD functions (using REST format) to manager planets. Planet contain name, terrain, climate and
-quantity of films that already appearred before (we get this using Swapi API).
+quantity of films that this planet already appearred before (we get this using Swapi API).
 
 ## Functionalities
 
 1. GET BY ID : http://localhost:8080/planets/{mongoEntityID} (GET)
 2. DELETE BY ID: http://localhost:8080/planets/{mongoEntityID} (DELETE)
 3. GET ALL: http://localhost:8080/planets (GET) - can pass request param (name) to filter by name
-4. CREATE: http://localhost:8080/planets (POST) - this method can return not found if planet does not exist on API (this is not necessary considerating that client only send valid names getting planet names on API)
+4. CREATE: http://localhost:8080/planets (POST) - this method can return not found if planet does not exist on API, validating by name (this is not necessary considerating that client only send valid names getting planet names on API)
 
 Body example
 
